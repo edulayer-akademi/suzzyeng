@@ -1,0 +1,33 @@
+# #, """, ''' are used in comment lines.
+
+### whitespaces ###
+\t \n These are whitespaces characters. It will be used in string subject.
+-\n- new line -\t- tab
+
+1)What is a variable?
+They are data storage areas. It is used to protect data by using various locations in memory. It is divided into different types.
+ex. age=19
+
+Variable Definition Rules
++helloWorld -camelCase 
++helloworld 
++hello_world-snake case
++HelloWorld -PascalCase
++HELLOWORLD
+(Suitable for py.)
+
+-Hello-World -kebab-case    
+(Nor Suitable for py.)
+
+CONSTANT =1 ex. DOGUMYILI = 1990
+
+For naming, understandable names should be given.
+ex. hava_durumu_tahmini = "Karlı"
+    havadurumuTahmini = NOT WELL
+    havadurumutahmini = NOT WELL
+    hdtahmini = NOT WELL
+
+
+
+
+
