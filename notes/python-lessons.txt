@@ -55,6 +55,31 @@ print(name+surname)
 "1" + "1" # "11"
 
 ***
+test = " Hello World"
+test.functions
+
+print(test.capitalize()) >>> Hello world [Capitalizes the initial letter.]
+print(test.title()) >>> Hello World [Capitalizes the first letter of all words.]
+print(test.lower()) >>> hello world [Writes all letters in lowercase.]
+print(test.upper()) >>> HELLO WORLD [Writes all letters in capitals.]
+print(test.count("l")) >>> 3 [Uppercase and lowercase letters must be taken into account.]
+
+ex.
+print(test.endswith("A")) >>> False [It tests what the last letter ends with.]
+print(test.endswith("d") >>> True 
+
+ex. If you're wondering where the letter o is,
+test= "Hello world"
+print(test.find("o")) >>> 4 [The computer starts counting from 0.]
+
+surname = "Doe\n\t"
+print(surname.strip()) >>> Doe [Removed the whitespaces at the end and beginning.]
+
+text = "a b c d"
+print(text.split()) >>> [a, b, c, d]
+
+
+
 
 
 
