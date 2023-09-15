@@ -44,6 +44,7 @@ It is a data type for holding texts and characters. It is defined in four differ
 xxxxxxxxxxx '''
 4-? (""" """)
 
+Mini Notes
 ex. 
 name = "John"
 surname = "Doe"
@@ -54,8 +55,7 @@ Normally the addition sign is used in arithmetic types. When we collect strings 
 print(name+surname)
 "1" + "1" # "11"
 
-***
-test = " Hello World"
+test = "Hello World"
 test.functions
 
 print(test.capitalize()) >>> Hello world [Capitalizes the initial letter.]
@@ -66,7 +66,32 @@ print(test.count("l")) >>> 3 [Uppercase and lowercase letters must be taken into
 
 ex.
 print(test.endswith("A")) >>> False [It tests what the last letter ends with.]
-print(test.endswith("d") >>> True 
+print(test.endswith("d")) >>> True 
+
+ex.
+print(test.startswith("H")) >>> True [It tests what the last letter starts with.]
+
+ex.
+print(test.index("W")) >>> 6 [It allows finding the location of the letter.]
+
+ex.
+print(test.isspace()) >>> False [It checks if there are only spaces inside.]
+if it were like this, test= " "
+print(test.isspace()) >>> True 
+
+ex.
+Alphanumeric means that it is both a character and a number.
+any= "abcde4567" [If there is _ it is not isalnum. - False]
+print(any.isalnum()) >>> True
+*
+print(test.isalpha()) >>> False [It's not alphabetical because it has numbers]
+*
+print(test.isnumeric()) >>> False [There should only be numbers.] 
+NOTE: If there are spaces, it outputs false.
+*
+print(test.isdecimal()) [Return True if the string is decimal string, False otherwise. A string is a decimal string if all characters in the string are decimal and there is at leaast one character in the string.]
+* 
+print(test.isdigit()) [Return True if the string is a digit string, False otherwise. A string is a digit string if all characters in the string are digits and there is at least one character in the string.]
 
 ex. If you're wondering where the letter o is,
 test= "Hello world"
@@ -77,6 +102,30 @@ print(surname.strip()) >>> Doe [Removed the whitespaces at the end and beginning
 
 text = "a b c d"
 print(text.split()) >>> [a, b, c, d]
+
+***
+String Formatters
+1) fstring
+
+name= "Suzy"
+welcome_message= f"Hello World {name}"
+print(welcome_message) >>> Hello World Suzy
+
+welcome_message= f"Hello World {name!r}" 
+print(welcome_message) >>> Hello World 'Suzy'
+
+weight = 80.154556
+message = f"Hello World Your Weight: {weight:.2f (or 1f)}" 
+Note: Don't forget to put : when using.
+Note: {weight/2 *2 etc.} You can perform mathematical operations in parentheses.
+
+2)str.format
+
+
+
+
+
+
 
 
 
