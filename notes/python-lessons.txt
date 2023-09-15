@@ -1,3 +1,5 @@
+__________FIRST LESSON__________
+
 # #, """, ''' are used in comment lines.
 
 ### whitespaces ###
@@ -120,6 +122,66 @@ Note: Don't forget to put : when using.
 Note: {weight/2 *2 etc.} You can perform mathematical operations in parentheses.
 
 2)str.format
+
+welcome_message="Hello World {name}".format(name="Suzy") 
+Note: You must put the characters in quotes.
+welcome_message="Hello World {number}".format(number=1) 
+welcome_message="Hello World {name}, {one}, {two}".format(name="Suzy", one=1, two=2) 
+
+3) %
+# formatter specifiers #
+%d integer // %.2f float // %f decimal number // %s texts // %c single character
+
+text = "Name: %s, Surname: %s, Age: %d, Weight: %f (or %.2f)" %("John", "Doe", 19, 85.676896)
+print(text)
+Note: It also works if you type %s in all of them. However, if a string value is given where %d (not str) is placed, it gives an error.
+
+***
+Arithmetic Types
+
+*İntegers (positive - negative integers and 0)
+*Float - Floating Point Number (3.14 , e etc.)
+*Complex - (1j+1 etc.)
+*Boolean - True (1) or False (0)
+
+print(True + True) >>> 2
+print(False+ True) >>> 1
+
+***
+year= 2023 
+year.__abs__() !absolute value
+
+ex. 
+text= -2023
+print(abs(text)) >>> 2023
+
+ex.
+text= 2000
+print(pow(2, text)) >>> 2^2000
+
+ex.
+import math
+print(math.sqrt(2000)) >>> √2000 = 44.72
+print(math.sin(60)) >>> -0.30
+print(math.cosh(60)) >>> 5.71
+print(math.factorial(5)) >>> 120
+
+***
+
+year= 2000
+year + year # 4000
+year / year #1
+year *2 # 4000
+year // 4 # 500
+
+year += 1 > 2001
+year -= 2 > 1998
+year *= 2 > 4000
+year /= 5 > 400
+year %= 200 > 0
+year //= 201 > 9.9 > 9
+
+Note: / is a floating point division operator and // is an integer division operator.
 
 
 
