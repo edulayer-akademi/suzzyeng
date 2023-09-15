@@ -27,6 +27,35 @@ ex. hava_durumu_tahmini = "Karlı"
     havadurumutahmini = NOT WELL
     hdtahmini = NOT WELL
 
+***
+age = 19 # definition
+age # declaration
+
+If there is a definition or assignment, it is called a definition.
+If it is a matter of using, specifying or declaring the value, it is called declaration.
+
+***
+Strings
+It is a data type for holding texts and characters. It is defined in four different ways.
+
+1- " xxx "
+2- ' xxx '
+3- ''' xxx
+xxxxxxxxxxx '''
+4-? (""" """)
+
+ex. 
+name = "John"
+surname = "Doe"
+print(isim, " ", surname) >>  John  Doe
+
+ex.
+Normally the addition sign is used in arithmetic types. When we collect strings with strings,
+print(name+surname)
+"1" + "1" # "11"
+
+***
+
 
 
 
