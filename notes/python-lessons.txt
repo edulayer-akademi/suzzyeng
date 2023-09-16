@@ -174,14 +174,39 @@ year / year #1
 year *2 # 4000
 year // 4 # 500
 
-year += 1 > 2001
-year -= 2 > 1998
-year *= 2 > 4000
-year /= 5 > 400
-year %= 200 > 0
-year //= 201 > 9.9 > 9
+year += 1 # 2001
+year -= 3 # 1998
+year *= 2 # 3998
+year /= 5 # 799.6
+# year %= 200 # 199.6
+year //= 201 # 3```
 
 Note: / is a floating point division operator and // is an integer division operator.
+
+***
+
+"34" string
+int("34") >> 34
+float("2e34") >> If I want it to be an integer >> int(float("2e34"))
+
+******
+TEMEL VERİ TİPLERİ
+******
+
+-Strings/Char Arrays (str)
+*Texts, strings or strings of characters; It is a data form containing.
+*It is defined with single quotes or double quotes.
+*For texts containing more than one line, three single or double quotes are used at the beginning and at the end.
+*The textual representation of all data types is string.
+*It has its own formatting operators.
+f operator: It is written at the beginning of the string. Fills the text according to the operations inside the {} character.
+% operator: It is used with various specifiers within the string.
+(%d-int, %s-string, %f-float etc.)
+
+
+
+
+
 
 
 
