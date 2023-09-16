@@ -203,6 +203,109 @@ f operator: It is written at the beginning of the string. Fills the text accordi
 % operator: It is used with various specifiers within the string.
 (%d-int, %s-string, %f-float etc.)
 
+If you are going to fill it directly, be careful about using double and single quotes.
+ex.
+f'Hello {"World"}'
+ex.
+f"Hello {'World'}"
+
+'' >> str
+'you' >> str
+
+***
+INTEGERS (INT)
+*Each integer is actually a float value.
+float("1") > 1.0 TRUE / int(("1.4")) > 1 FALSE >>> int(float("1.4")) > 1 TRUE
+*It refers to the set of integers.(Z+/- {0})
+*A new integer is derived with only numeric data types or textual representations of numeric data.
+Integer(3,-3) | Float(3.14, 3e5) | String('3', '-3') | Complex(1j, '1+2j')
+*To use sub-attributes, numeric data types such as integer, float, complex must be written in parentheses.
+
+(1).__ceil__()
+(1e5).__ceil__()
+(1j).__abs__()
+
+***
+
+BOOLEANS
+1. True > 1
+2. False > 0 
+
+bool(1) > True
+bool(1.4) > True
+bool("abc") > True
+
+bool(0) > False
+bool("") > False
+! bool(" ") > True
+bool(0.0) > False
+
+***
+
+OPERATORS
++ > 1+1 > "A"+"B" > True + False
+- > 1-1 > True - True
+* > 2*5 > "A"*5 > AAAAA > True * False
+/ > 10 / 5 > True / True
+% > 20 % 5 > True % True
+// > 20// 5 > True // True
+
++=
+ex.
+age=10
+
+age +=1 # age = age + 1
+age -=1 # age = age - 1
+age *=2 # age = age * 2
+age /=2 # age = age / 2
+
+ex.
+test=25
+
+test %=11
+test //=2 #1
+
+ex.
+pow(2,5) 
+print(2**5)
+
+***
+Equalıty Operators
+
+== >> test == age >> False
+!= >> test != age >> True
+Note : != Not equal
+***
+Logical Operators
+
+and / or
+
+legalage = False
+student = True
+scholarship = True
+
+print(legalage and student) = False
+print(legalage or student) = True
+print((legalage and student) or student) = True
+print((legalage and student) or legalage) = False
+print((legalage and student) or scholarship) = True
+
+***
+NOT
+not True > False
+not False > True
+not 1 > 0
+not 0 > 1
+
+print(not True) > False
+print(not legalage and student) > True
+print(legalage and not student) > False
+print(bool(not 0)) > True
+***
+
+
+
+
 
 
 
