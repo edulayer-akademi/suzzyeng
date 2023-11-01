@@ -1,0 +1,72 @@
+# For Loop Note 
+""""Print each fruit in a fruit list:""" 
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+# Looping Through a String
+for y in "banana":
+    print(y)
+
+#The break Statement
+"""Exit the loop when x is "banana":"""
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    print(x)
+    if x == "banana":
+        break
+    
+"""Exit the loop when x is "banana", but this time the break comes before the print:"""
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+  
+# Example 
+n=5 
+while n>0:
+    n=n-1
+    if n == 2:
+        break
+    print(n)
+print("Loop is finished.")
+
+# Continue Statement
+# With the continue statement we can stop the current iteration of the loop, and continue with the next:
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+  
+  """Example <3 """
+  count=10
+  
+  while count>0:
+      if count %3 == 0:
+          count -=1
+          continue 
+      print(f"Processing Number {count}") 
+      count -= 1 
+      
+# The range() Function
+# The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
+
+"""Note that range(6) is not the values of 0 to 6, but the values 0 to 5."""
+print("ex1")
+for x in range(6):
+  print(x)
+
+print("ex2")
+"""It is possible to specify the starting value by adding a parameter: range(2, 6), which means values from 2 to 6 (but not including 6):"""
+for x in range(2, 6):
+  print(x) 
+
+print("ex3")
+"""It is possible to specify the increment value by adding a third parameter: range(2, 30, 3):"""
+for x in range(2, 30, 3):
+  print(x)
